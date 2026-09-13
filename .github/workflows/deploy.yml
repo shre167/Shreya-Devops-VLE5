@@ -19,7 +19,7 @@ jobs:
       - name: Test Docker image
         run: |
           docker run -d --name test-app -p 3000:3000 devops-vle5-app:${{ github.sha }}
-          sleep 3
+          sleep 8
           curl --fail http://localhost:3000
           docker stop test-app
           docker rm test-app
