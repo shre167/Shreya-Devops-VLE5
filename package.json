@@ -1,0 +1,9 @@
+{
+  "name": "devops-vle5-app",
+  "version": "1.0.0",
+  "description": "DevOps Virtual Lab Experiment 5",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
