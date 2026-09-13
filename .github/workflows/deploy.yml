@@ -54,7 +54,7 @@ jobs:
       - name: Copy application to EC2
         uses: appleboy/scp-action@v1
         with:
-          host: 54.209.127.138
+          host: 18.206.247.241
           username: ec2-user
           key: ${{ secrets.EC2_SSH_KEY }}
           source: "server.js,package.json,Dockerfile,k8s/deployment.yaml"
@@ -63,7 +63,7 @@ jobs:
       - name: Deploy to Kubernetes
         uses: appleboy/ssh-action@v1
         with:
-          host: 54.209.127.138
+          host: 18.206.247.241
           username: ec2-user
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
