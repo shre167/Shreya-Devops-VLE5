@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: devops-vle5-app
-          image: devops-vle5-app:1.0
+          image: devops-vle5-app:f8e33c81257d919510353ec8ed7ded94457ce937
           imagePullPolicy: Never
           ports:
             - containerPort: 3000
